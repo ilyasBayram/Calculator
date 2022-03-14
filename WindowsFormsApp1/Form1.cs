@@ -19,21 +19,27 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int sayı1;
-            int sayı2;
-            int toplam;
-            int a, b, sonuç;
+            #region Variables
+            int number1;
+            int number2;
+            int sum;
+            int a, b, result;
+            #endregion
 
-            sayı1 = Convert.ToInt32(textBox1.Text);
-            sayı2 = Convert.ToInt32(textBox2.Text);
-            toplam = sayı1 + sayı2;
-            label4.Text = toplam.ToString();
+            #region Sum block
+            number1 = Convert.ToInt32(textBox1.Text);
+            number2 = Convert.ToInt32(textBox2.Text);
+            sum = number1 + number2;
+            label4.Text = sum.ToString();
+            #endregion
 
+            #region Multible block
             a = Convert.ToInt32(textBox4.Text);
             b = Convert.ToInt32(textBox3.Text);
-            sonuç = a * b;
-            label9.Text = sonuç.ToString();
+            result = a * b;
+            label9.Text = result.ToString();
 
+            #endregion
         }
 
         private void label2_Click(object sender, EventArgs e)
