@@ -33,7 +33,7 @@ namespace WindowsFormsApp1
             label4.Text = sum.ToString();
             #endregion
 
-            #region Multible block
+            #region Multiple block
             a = Convert.ToInt32(textBox4.Text);
             b = Convert.ToInt32(textBox3.Text);
             result = a * b;
@@ -42,9 +42,5 @@ namespace WindowsFormsApp1
             #endregion
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
