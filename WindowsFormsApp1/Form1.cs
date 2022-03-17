@@ -17,29 +17,41 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
+        #region Variables
+        int firstNumber, secondNumber;
+        int thirdnumber, fourthNumber, result;
+        int sum;
+        #endregion
+
+        #region sum
+        //In this method two number entered by user added and the result is
+        //written to label 4
+        public void sumofNumbers()
+        {
+            firstNumber = Convert.ToInt32(textBox1.Text);
+            secondNumber = Convert.ToInt32(textBox2.Text);
+            sum = firstNumber + secondNumber;
+            label4.Text = sum.ToString();
+        }
+        #endregion
+
+        #region multiply
+        //In this method two numbers entered by user multiply and the result is 
+        //written to label 9
+        public void multiplyofNumbers()
+        {
+            thirdnumber = Convert.ToInt32(textBox4.Text);
+            fourthNumber = Convert.ToInt32(textBox3.Text);
+            result = thirdnumber * fourthNumber;
+            label9.Text = result.ToString();
+        }
+        #endregion
+
         private void button1_Click(object sender, EventArgs e)
         {
-            #region Variables
-            int number1;
-            int number2;
-            int sum;
-            int a, b, result;
-            #endregion
-
-            #region Sum block
-            number1 = Convert.ToInt32(textBox1.Text);
-            number2 = Convert.ToInt32(textBox2.Text);
-            sum = number1 + number2;
-            label4.Text = sum.ToString();
-            #endregion
-
-            #region Multiple block
-            a = Convert.ToInt32(textBox4.Text);
-            b = Convert.ToInt32(textBox3.Text);
-            result = a * b;
-            label9.Text = result.ToString();
-
-            #endregion
+        // when button is clicked by user two methods are called
+            sumofNumbers();
+            multiplyofNumbers();
         }
 
     }
